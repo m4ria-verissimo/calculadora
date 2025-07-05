@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        section{
+            
+            padding: 50px;
+            border: solid;
+            border-radius: 30px;
+            margin:auto;
+            margin-top:80px ;
+            width:max-content;
+           
+        }
+        .mae{
+           margin: auto;
+           text-align: center;
+           font-size: 20px;
+          
+        }
+        input{
+            
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+        }
+        button{
+            padding:10px;
+            border-radius:20px;
+        }
+        select{
+            border-radius: 18px;
+        }
+        h2{
+            text-align: center;
+        }
+        .re{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+         <h2>Calculadora</h2>
+         <br>
+        <div class="mae">
+    1° número:
+    <input type="number" id="n1">
+    <br><br>
+    
+   Operação: <input id="op">
+    <br><br>
+    2° número:
+    <input type="number" id="n2">
+    <br><br><br>
+    <button onclick="cal()">calcular</button>
+        </div>
+<br>
+        <div id="resu" class="re"></div>
+    </section>
+    <script src="cal.js"></script>
+</body>
+</html>
